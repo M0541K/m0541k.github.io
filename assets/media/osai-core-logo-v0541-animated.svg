@@ -1,0 +1,41 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="#000541"/>
+
+  <!-- Container -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#C0C4CC" stroke-width="42"/>
+
+  <!-- Inner Field -->
+  <circle cx="256" cy="256" r="145" fill="#000541"/>
+
+  <!-- ROTATING STATES -->
+  <g>
+    <animateTransform 
+      attributeName="transform"
+      type="rotate"
+      from="0 256 256"
+      to="360 256 256"
+      dur="12s"
+      repeatCount="indefinite"/>
+
+    <circle cx="256" cy="128" r="26" fill="#005410" opacity="0.7"/>
+    <circle cx="148" cy="205" r="26" fill="#A0541B" opacity="0.7"/>
+    <circle cx="364" cy="205" r="26" fill="#6A00A3" opacity="0.7"/>
+    <circle cx="185" cy="338" r="30" fill="#005410" opacity="0.5"/>
+    <circle cx="335" cy="338" r="24" fill="#C0C4CC" opacity="0.6"/>
+  </g>
+
+  <!-- FOCUS (stays stable) -->
+  <circle cx="256" cy="256" r="54" fill="#CEB14D"/>
+
+  <!-- SIGNAL POINT (pulse) -->
+  <circle cx="276" cy="246" r="5" fill="#000541">
+    <animate 
+      attributeName="r"
+      values="3;6;3"
+      dur="2s"
+      repeatCount="indefinite"/>
+  </circle>
+
+</svg>

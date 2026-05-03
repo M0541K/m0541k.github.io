@@ -1,0 +1,12 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background (tiefer als Signal) -->
+  <rect width="512" height="512" fill="#000000"></rect>
+
+  <!-- Subtle Field (kaum sichtbar) -->
+  <circle cx="256" cy="256" r="180" fill="#00021D" opacity="0.35"></circle>
+
+  <!-- Boundary Hint (nicht gesetzt, nur angedeutet) -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#C0C4CC" stroke-width="2" opacity="0.08"></circle>
+
+</svg>

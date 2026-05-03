@@ -1,0 +1,23 @@
+{
+  "version": "OSAI_v1alpha",
+  "date": "2026-05-03",
+  "project": "M0541K / OSAI",
+  "creator_context": "FloPiet aka MosaFarmat",
+  "web": [
+    "M0541K.de",
+    "mosaik.live"
+  ],
+  "support": "https://ko-fi.com/flopiet",
+  "build_type": "static_github_pages",
+  "entry": "index.html",
+  "core_event": "Erstes MF erstellt",
+  "contains": [
+    "index.html",
+    "pages",
+    "assets",
+    "docs",
+    ".nojekyll",
+    "README.md"
+  ],
+  "notes": "v1alpha is a lightweight website implementation, not a direct GitHub push."
+}

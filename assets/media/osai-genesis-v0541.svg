@@ -1,0 +1,15 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="#000541"></rect>
+
+  <!-- Optional Container (sehr subtil) -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#C0C4CC" stroke-width="6" opacity="0.15"></circle>
+
+  <!-- Fokus (klein, aber klar) -->
+  <circle cx="256" cy="256" r="18" fill="#CEB14D"></circle>
+
+  <!-- Erster Zustand -->
+  <circle cx="256" cy="180" r="10" fill="#005410" opacity="0.6"></circle>
+
+</svg>

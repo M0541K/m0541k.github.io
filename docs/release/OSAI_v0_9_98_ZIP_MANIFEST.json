@@ -1,0 +1,73 @@
+{
+  "version": "OSAI_v0_9_98",
+  "date": "03.05.2026",
+  "project": "M0541K / OSAI",
+  "creator_context": "FloPiet aka MosaFarmat",
+  "web": [
+    "M0541K.de",
+    "mosaik.live"
+  ],
+  "support": "https://ko-fi.com/flopiet",
+  "status": "light release / core breakthrough / first MF",
+  "core_event": "Erstes MF erstellt",
+  "heavy_archive_summary": {
+    "archive": "0S41.zip",
+    "compressed_size_mb": 280.17,
+    "entries": 803,
+    "uncompressed_size_mb": 296.17,
+    "extension_counts": {
+      ".txt": 473,
+      ".md": 155,
+      ".png": 87,
+      ".svg": 18,
+      ".pdf": 8,
+      ".jpeg": 7,
+      ".mp4": 5,
+      ".zip": 4,
+      ".jpg": 4,
+      ".html": 3,
+      ".ini": 2,
+      ".7z": 1,
+      ".pptx": 1,
+      ".xlsx": 1,
+      ".url": 1
+    },
+    "top_folders": {
+      "raw_A": 331,
+      "raw_B": 155,
+      "_privateNotizen": 68,
+      "raw_P": 52,
+      "link2osai": 46,
+      "working": 43,
+      "_rawdesign": 39,
+      "mosaik.live": 21,
+      "archive": 6,
+      "raw_w_ebsite": 5,
+      "pdf": 4,
+      "Poster": 4,
+      "raw_M": 4,
+      "Source": 4,
+      "Exports": 3,
+      "raw_t_ext": 2,
+      "_version_x_zip": 2,
+      "0S41-root": 1,
+      "01-OSAImanifest-core54.7z": 1,
+      "010.md": 1
+    }
+  },
+  "recommended_next_files": [
+    "000000_KERN_ZUSAMMENFASSUNG.md",
+    "000001_VOID.md",
+    "000002_SIGNAL.md",
+    "000003_BEWEGUNG.md",
+    "000004_VARIATION.md",
+    "000005_GRENZE.md",
+    "000006_STRUKTUR.md",
+    "000007_RAUM.md",
+    "000008_KONFLIKT.md",
+    "000009_ENTSCHEIDUNG.md",
+    "000010_LOOP.md",
+    "000011_AWARENESS.md",
+    "000012_ARCHIV.md"
+  ]
+}

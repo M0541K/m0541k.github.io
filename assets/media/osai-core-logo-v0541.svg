@@ -1,0 +1,50 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+&#x20; <!-- OSAI CORE LOGO v0.541 -->
+
+
+
+&#x20; <!-- Background -->
+
+&#x20; <rect width="512" height="512" fill="#000541"/>
+
+
+
+&#x20; <!-- Container Ring -->
+
+&#x20; <circle cx="256" cy="256" r="190" fill="none" stroke="#C0C4CC" stroke-width="42"/>
+
+
+
+&#x20; <!-- Inner Field -->
+
+&#x20; <circle cx="256" cy="256" r="145" fill="#000541"/>
+
+
+
+&#x20; <!-- States -->
+
+&#x20; <circle cx="256" cy="128" r="26" fill="#005410" opacity="0.35"/>
+
+&#x20; <circle cx="148" cy="205" r="26" fill="#A0541B" opacity="0.35"/>
+
+&#x20; <circle cx="364" cy="205" r="26" fill="#6A00A3" opacity="0.35"/>
+
+&#x20; <circle cx="185" cy="338" r="30" fill="#005410" opacity="0.22"/>
+
+&#x20; <circle cx="335" cy="338" r="24" fill="#C0C4CC" opacity="0.45"/>
+
+
+
+&#x20; <!-- Focus -->
+
+&#x20; <circle cx="256" cy="256" r="54" fill="#CEB14D"/>
+
+
+
+&#x20; <!-- Signal Point -->
+
+&#x20; <circle cx="276" cy="246" r="5" fill="#000541"/>
+
+</svg>
+

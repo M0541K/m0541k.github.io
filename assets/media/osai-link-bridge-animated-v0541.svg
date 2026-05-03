@@ -1,0 +1,38 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="#000541"></rect>
+
+  <!-- Open Interface Container -->
+  <path d="M92 256 A164 164 0 1 1 256 420" fill="none" stroke="#C0C4CC" stroke-width="18" opacity="0.55"></path>
+  <path d="M420 256 A164 164 0 1 0 256 92" fill="none" stroke="#C0C4CC" stroke-width="18" opacity="0.55"></path>
+
+  <!-- Bridge Line -->
+  <line x1="190" y1="256" x2="322" y2="256" stroke="#C0C4CC" stroke-width="10" opacity="0.55" stroke-linecap="round"></line>
+
+  <!-- Moving Signal -->
+  <circle r="9" fill="#A0541B">
+    <animateMotion dur="3.5s" repeatCount="indefinite" path="M190 256 L322 256 L190 256"></animateMotion>
+  </circle>
+
+  <!-- OSAI Focus -->
+  <circle cx="170" cy="256" r="46" fill="#CEB14D"></circle>
+  <circle cx="170" cy="256" r="9" fill="#000541"></circle>
+
+  <!-- External Focus -->
+  <circle cx="342" cy="256" r="46" fill="#00FFFF" opacity="0.85"></circle>
+  <circle cx="342" cy="256" r="9" fill="#000541"></circle>
+
+  <!-- Pulse OSAI -->
+  <circle cx="170" cy="256" r="54" fill="none" stroke="#CEB14D" stroke-width="4" opacity="0.4">
+    <animate attributeName="r" values="50;64;50" dur="3.5s" repeatCount="indefinite"></animate>
+    <animate attributeName="opacity" values="0.45;0.1;0.45" dur="3.5s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <!-- Pulse External -->
+  <circle cx="342" cy="256" r="54" fill="none" stroke="#00FFFF" stroke-width="4" opacity="0.4">
+    <animate attributeName="r" values="64;50;64" dur="3.5s" repeatCount="indefinite"></animate>
+    <animate attributeName="opacity" values="0.1;0.45;0.1" dur="3.5s" repeatCount="indefinite"></animate>
+  </circle>
+
+</svg>

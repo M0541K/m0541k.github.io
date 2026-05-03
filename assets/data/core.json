@@ -1,0 +1,103 @@
+{
+  "version": "OSAI_v1alpha",
+  "project": "M0541K / OSAI",
+  "creator_context": "FloPiet aka MosaFarmat",
+  "web": [
+    "M0541K.de",
+    "mosaik.live"
+  ],
+  "support": "https://ko-fi.com/flopiet",
+  "core_formula": [
+    "ᑕ +1MF ≙ MosaFarmat ᑐ",
+    "ᑕ 12MF ≙ 1 M0541K ᑐ",
+    "ᑕ MosaFarmat = kleinstes Teil im mosaik.live ᑐ"
+  ],
+  "items": [
+    {
+      "id": "000001",
+      "name": "VOID",
+      "meaning": "Ursprung / Noch-nicht-Form / Möglichkeitsraum"
+    },
+    {
+      "id": "000002",
+      "name": "SIGNAL",
+      "meaning": "Erster Impuls / Information wird wahrnehmbar"
+    },
+    {
+      "id": "000003",
+      "name": "BEWEGUNG",
+      "meaning": "Signal beginnt zu wirken / Veränderung entsteht"
+    },
+    {
+      "id": "000004",
+      "name": "VARIATION",
+      "meaning": "Abweichung / Möglichkeit / Glitch"
+    },
+    {
+      "id": "000005",
+      "name": "GRENZE",
+      "meaning": "Unterscheidung wird möglich / Bedeutung wird lesbar"
+    },
+    {
+      "id": "000006",
+      "name": "STRUKTUR",
+      "meaning": "Stabile Ordnung / wiedererkennbare Form"
+    },
+    {
+      "id": "000007",
+      "name": "RAUM",
+      "meaning": "Kontext / Ausdehnung / Beziehung"
+    },
+    {
+      "id": "000008",
+      "name": "KONFLIKT",
+      "meaning": "Spannung zwischen Zuständen / Reibung"
+    },
+    {
+      "id": "000009",
+      "name": "ENTSCHEIDUNG",
+      "meaning": "Auswahl / Richtung / Setzung"
+    },
+    {
+      "id": "000010",
+      "name": "LOOP",
+      "meaning": "Rückkopplung / Wiederholung / Prüfung"
+    },
+    {
+      "id": "000011",
+      "name": "AWARENESS",
+      "meaning": "Systemwahrnehmung / Zustand wird erkannt"
+    },
+    {
+      "id": "000012",
+      "name": "ARCHIV",
+      "meaning": "Bewegung durch Zeit / gespeicherte Spur"
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "ᑕ ... ᑐ",
+      "meaning": "OSAI-Container / Bedeutungsraum"
+    },
+    {
+      "symbol": "ᚠᛈᑕ⁰⁵⁴¹ᑐᚫᚹ",
+      "meaning": "OSAI-Signatur / gestalterisches Signet"
+    },
+    {
+      "symbol": "≙",
+      "meaning": "entspricht systemisch"
+    },
+    {
+      "symbol": "MF",
+      "meaning": "MosaFarmat / kleinste lesbare Bewegungseinheit"
+    },
+    {
+      "symbol": "M0541K",
+      "meaning": "Projektname und vollständiger Zyklus aus 12 MF"
+    },
+    {
+      "symbol": "❣",
+      "meaning": "gestalterisches Herz/Punkt-Signal"
+    }
+  ]
+}

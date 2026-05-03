@@ -1,0 +1,47 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <rect width="512" height="512" fill="#000541"></rect>
+
+  <!-- Container -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#C0C4CC" stroke-width="42"></circle>
+
+  <!-- Inner Field -->
+  <circle cx="256" cy="256" r="145" fill="#000541"></circle>
+
+  <!-- States: GENESIS → CORE → FLOW → LIVE -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="0 256 256; 0 256 256; 180 256 256; 360 256 256" keyTimes="0;0.28;0.68;1" dur="16s" repeatCount="indefinite"></animateTransform>
+
+    <!-- Signal / Structure / Meta / Manifestation -->
+    <circle cx="256" cy="128" r="24" fill="#005410">
+      <animate attributeName="opacity" values="0;0.35;0.75;0.55;0" dur="16s" repeatCount="indefinite"></animate>
+    </circle>
+
+    <circle cx="148" cy="205" r="24" fill="#A0541B">
+      <animate attributeName="opacity" values="0;0.15;0.7;0.9;0" dur="16s" repeatCount="indefinite"></animate>
+    </circle>
+
+    <circle cx="364" cy="205" r="24" fill="#6A00A3">
+      <animate attributeName="opacity" values="0;0.15;0.65;0.7;0" dur="16s" repeatCount="indefinite"></animate>
+    </circle>
+
+    <circle cx="185" cy="338" r="28" fill="#005410">
+      <animate attributeName="opacity" values="0;0.1;0.45;0.65;0" dur="16s" repeatCount="indefinite"></animate>
+    </circle>
+
+    <circle cx="335" cy="338" r="22" fill="#C0C4CC">
+      <animate attributeName="opacity" values="0;0.2;0.45;0.85;0" dur="16s" repeatCount="indefinite"></animate>
+    </circle>
+  </g>
+
+  <!-- Focus -->
+  <circle cx="256" cy="256" r="54" fill="#CEB14D">
+    <animate attributeName="r" values="20;54;54;62;20" keyTimes="0;0.28;0.68;0.88;1" dur="16s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <!-- Inner signal point -->
+  <circle cx="276" cy="246" r="5" fill="#000541">
+    <animate attributeName="r" values="0;3;5;7;0" keyTimes="0;0.28;0.68;0.88;1" dur="16s" repeatCount="indefinite"></animate>
+  </circle>
+
+</svg>

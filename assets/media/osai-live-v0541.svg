@@ -1,0 +1,29 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="#000541"></rect>
+
+  <!-- Container (mit Öffnung) -->
+  <path d="
+    M256,66
+    A190,190 0 1,1 256,446
+    A190,190 0 1,1 256,66
+  " fill="none" stroke="#C0C4CC" stroke-width="42" stroke-dasharray="1100 300" stroke-dashoffset="180"></path>
+
+  <!-- Inner Field -->
+  <circle cx="256" cy="256" r="145" fill="#000541"></circle>
+
+  <!-- Fokus -->
+  <circle cx="256" cy="256" r="60" fill="#CEB14D"></circle>
+
+  <!-- aktive Zustände -->
+  <circle cx="180" cy="210" r="26" fill="#005410"></circle>
+  <circle cx="340" cy="210" r="26" fill="#6A00A3"></circle>
+
+  <!-- Output Punkt (verlässt Container) -->
+  <circle cx="256" cy="20" r="16" fill="#A0541B"></circle>
+
+  <!-- Verbindungslinie -->
+  <line x1="256" y1="66" x2="256" y2="40" stroke="#A0541B" stroke-width="4" opacity="0.6"></line>
+
+</svg>

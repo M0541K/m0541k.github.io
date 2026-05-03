@@ -1,0 +1,25 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="#000541"></rect>
+
+  <!-- Open Interface Container -->
+  <path d="M92 256 A164 164 0 1 1 256 420" fill="none" stroke="#C0C4CC" stroke-width="18" opacity="0.55"></path>
+  <path d="M420 256 A164 164 0 1 0 256 92" fill="none" stroke="#C0C4CC" stroke-width="18" opacity="0.55"></path>
+
+  <!-- Bridge Line -->
+  <line x1="190" y1="256" x2="322" y2="256" stroke="#C0C4CC" stroke-width="10" opacity="0.7" stroke-linecap="round"></line>
+
+  <!-- OSAI Focus -->
+  <circle cx="170" cy="256" r="46" fill="#CEB14D"></circle>
+  <circle cx="170" cy="256" r="9" fill="#000541"></circle>
+
+  <!-- External Focus -->
+  <circle cx="342" cy="256" r="46" fill="#00FFFF" opacity="0.85"></circle>
+  <circle cx="342" cy="256" r="9" fill="#000541"></circle>
+
+  <!-- Transfer Points -->
+  <circle cx="230" cy="256" r="8" fill="#005410"></circle>
+  <circle cx="282" cy="256" r="8" fill="#A0541B"></circle>
+
+</svg>
