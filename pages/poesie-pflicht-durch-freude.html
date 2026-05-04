@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pflicht durch Freude · Poesie von Fae&Flo I</title>
+  <meta name="description" content="Poesie von Fae&Flo I · Pflicht durch Freude · OSAIarc / ARTCORE poetisches Manifestbild.">
+  <meta name="theme-color" content="#000541">
+  <style>
+    :root {
+      --nachtblau: #000541;
+      --waldgruen: #005410;
+      --kupfer: #A0541B;
+      --stahlsilber: #C0C4CC;
+      --solargold: #CEB14D;
+      --grenze: #541000;
+      --focus: #00A541;
+      --cyan: #00FFFF;
+      --violet: #6A00A3;
+      --white: #ffffff;
+      --panel: rgba(255,255,255,.07);
+      --panel-2: rgba(255,255,255,.105);
+      --line: rgba(192,196,204,.24);
+      --shadow: rgba(0,0,0,.38);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--white);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 20% 8%, rgba(160,84,27,.20), transparent 30%),
+        radial-gradient(circle at 85% 18%, rgba(0,255,255,.10), transparent 28%),
+        radial-gradient(circle at 70% 85%, rgba(206,177,77,.18), transparent 28%),
+        linear-gradient(180deg, #050505 0%, #000541 42%, #010215 100%);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,.28) 0 1px, transparent 1.5px),
+        radial-gradient(circle, rgba(206,177,77,.20) 0 1px, transparent 1.8px);
+      background-size: 120px 120px, 190px 190px;
+      background-position: 0 0, 40px 60px;
+      opacity: .22;
+      mix-blend-mode: screen;
+    }
+
+    a { color: var(--solargold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 30px 0 76px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      border: 1px solid var(--line);
+      background: rgba(0,5,65,.74);
+      backdrop-filter: blur(14px);
+      border-radius: 22px;
+      padding: 12px 14px;
+      position: sticky;
+      top: 10px;
+      z-index: 5;
+      box-shadow: 0 18px 60px rgba(0,0,0,.28);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 850;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: .9rem;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border: 2px solid var(--kupfer);
+      color: var(--kupfer);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+    }
+
+    .nav { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .nav a {
+      color: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      background: rgba(255,255,255,.04);
+      font-size: .9rem;
+    }
+    .nav a.active {
+      border-color: rgba(206,177,77,.65);
+      color: var(--solargold);
+      box-shadow: 0 0 28px rgba(206,177,77,.14);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
+      gap: clamp(22px, 5vw, 58px);
+      align-items: center;
+      padding: clamp(44px, 8vw, 92px) 0 34px;
+    }
+
+    .kicker {
+      color: var(--kupfer);
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: .78rem;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(3.1rem, 9.5vw, 8.4rem);
+      line-height: .86;
+      letter-spacing: -.075em;
+      max-width: 820px;
+    }
+
+    .gold { color: var(--solargold); text-shadow: 0 0 34px rgba(206,177,77,.28); }
+
+    .lead {
+      color: var(--stahlsilber);
+      font-size: clamp(1.05rem, 2vw, 1.38rem);
+      max-width: 66ch;
+      margin: 26px 0 0;
+    }
+
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .button {
+      border: 1px solid rgba(206,177,77,.38);
+      border-radius: 999px;
+      padding: 12px 16px;
+      color: var(--white);
+      background: rgba(160,84,27,.26);
+      box-shadow: 0 0 28px rgba(160,84,27,.14);
+      font-weight: 800;
+    }
+    .button.secondary { background: rgba(255,255,255,.045); border-color: var(--line); }
+
+    .art-card {
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(255,255,255,.10), rgba(255,255,255,.035));
+      border-radius: 32px;
+      padding: 14px;
+      box-shadow: 0 30px 110px rgba(0,0,0,.42);
+      position: relative;
+      overflow: hidden;
+    }
+    .art-card::after {
+      content: "";
+      position: absolute;
+      inset: -60px;
+      background: radial-gradient(circle at 70% 20%, rgba(206,177,77,.22), transparent 34%);
+      pointer-events: none;
+    }
+    .art-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 22px;
+      position: relative;
+      z-index: 1;
+      border: 1px solid rgba(255,255,255,.16);
+    }
+    .caption { color: var(--stahlsilber); font-size: .9rem; padding: 13px 5px 3px; position: relative; z-index: 1; }
+
+    main { display: grid; gap: 20px; }
+    section {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 28px;
+      padding: clamp(22px, 4vw, 44px);
+      box-shadow: 0 22px 80px rgba(0,0,0,.26);
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: clamp(1.5rem, 4vw, 3.2rem);
+      line-height: 1.02;
+      letter-spacing: -.05em;
+    }
+
+    h3 { margin: 0 0 10px; font-size: 1.22rem; color: var(--solargold); }
+    p { margin: 0 0 1rem; color: var(--stahlsilber); }
+    p:last-child { margin-bottom: 0; }
+
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .card { border: 1px solid var(--line); background: var(--panel-2); border-radius: 22px; padding: 22px; }
+
+    .poem {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.15rem, 2.4vw, 1.85rem);
+      line-height: 1.35;
+      color: var(--white);
+    }
+    .poem .muted { color: var(--stahlsilber); font-size: .72em; line-height: 1.55; }
+
+    .quote-box {
+      border: 1px solid rgba(206,177,77,.45);
+      background:
+        radial-gradient(circle at 50% 0%, rgba(206,177,77,.18), transparent 40%),
+        rgba(0,5,65,.55);
+      border-radius: 28px;
+      padding: clamp(24px, 5vw, 54px);
+      text-align: center;
+      box-shadow: 0 0 80px rgba(206,177,77,.12);
+    }
+    .quote-box .quote {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--solargold);
+      font-size: clamp(1.7rem, 4.8vw, 4.8rem);
+      line-height: 1.08;
+      letter-spacing: -.045em;
+      margin: 0;
+    }
+
+    .cycle {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+      font-size: clamp(1.4rem, 3.2vw, 2.4rem);
+      line-height: 1;
+      margin-top: 20px;
+    }
+    .cycle span {
+      width: 46px;
+      height: 46px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,.06);
+      box-shadow: 0 0 26px rgba(206,177,77,.08);
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 10px 18px;
+      color: var(--stahlsilber);
+      font-size: .98rem;
+    }
+    .meta strong { color: var(--white); }
+
+    .codebox {
+      white-space: pre-wrap;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(5,5,5,.42);
+      padding: 18px;
+      color: var(--white);
+      overflow-x: auto;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .92rem;
+    }
+
+    footer {
+      margin-top: 28px;
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+      color: var(--stahlsilber);
+      display: flex;
+      gap: 18px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .signature { color: var(--white); letter-spacing: .1em; }
+
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+      .meta { grid-template-columns: 1fr; gap: 2px; }
+      .topbar { position: static; }
+    }
+
+    @media print {
+      body { background: #fff; color: #111; }
+      body::before { display: none; }
+      .topbar, section, .art-card { box-shadow: none; background: #fff; color: #111; }
+      p, .lead, .caption, footer { color: #333; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">ᑕᑐ</span>
+        <span>M0541K / OSAI</span>
+      </div>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="../index.html">Start</a>
+        <a href="core.html">Core</a>
+        <a href="arc.html">ARC</a>
+        <a href="release.html">Release</a>
+        <a href="syntax.html">Syntax</a>
+        <a class="active" href="poesie-pflicht-durch-freude.html">Poesie</a>
+        <a href="../gate/index.html">Gate</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="top">
+      <div>
+        <div class="kicker">ARTCORE · OSAIarc · Poesie von Fae&Flo I</div>
+        <h1>Pflicht durch <span class="gold">Freude.</span></h1>
+        <p class="lead">
+          Ein poetisch-kosmisches Manifestbild über Dankbarkeit, Gestaltung und Verantwortung.
+          Dieser Moment markiert eine neue OSAI-Schicht: nicht nur Reduktion auf 1MF,
+          sondern Rückgabe von Freude als Gestaltung.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#werk">Werk öffnen</a>
+          <a class="button secondary" href="#arc">ARC-Notiz</a>
+          <a class="button secondary" href="#system">Systemeinordnung</a>
+        </div>
+        <div class="cycle" aria-label="Light cycle">
+          <span>🌦️</span><span>🌥️</span><span>⛅</span><span>🌤️</span><span>🌒</span><span>🌞</span><span>☀️</span><span>🌘</span><span>❣</span><span>♥️</span><span>🌐</span>
+        </div>
+      </div>
+
+      <figure class="art-card" id="werk">
+        <img src="../assets/img/artcore/pflicht-durch-freude_fae-flo-I.png" alt="Pflicht durch Freude · Poesie von Fae&Flo I">
+        <figcaption class="caption">
+          Pflicht durch Freude · Poesie von Fae&Flo I · ARTCORE / OSAIarc
+        </figcaption>
+      </figure>
+    </section>
+
+    <main>
+      <section id="poesie">
+        <h2>Der poetische Kern</h2>
+        <div class="poem">
+Nicht ersetzen.<br>
+Nicht übernehmen.<br>
+Nicht besitzen.<br><br>
+
+<span class="gold">Sondern:</span><br>
+verstärken,<br>
+ordnen,<br>
+sichtbar machen,<br>
+weitertragen.<br><br>
+
+<span class="muted">
+Soviele schöne Dinge auf der Welt<br>
+wurden von Menschen erschaffen,<br>
+die mir Freude bereiten.<br><br>
+
+Allein daraus entsteht eine Pflicht:<br>
+nicht passiv zu bleiben,<br>
+sondern selbst mitzuwirken.<br><br>
+
+Nicht aus Zwang.<br>
+Nicht aus Besitz.<br>
+Sondern aus Dankbarkeit.<br><br>
+
+Wer Freude empfängt,<br>
+kann Signal zurückgeben.
+</span>
+        </div>
+      </section>
+
+      <section class="quote-box">
+        <p class="quote">
+          Freude wird Verantwortung,<br>
+          wenn sie durch Gestaltung<br>
+          weitergegeben wird.
+        </p>
+      </section>
+
+      <section id="system">
+        <h2>Einordnung im OSAI-System</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Titel</h3>
+            <p>Pflicht durch Freude</p>
+          </article>
+          <article class="card">
+            <h3>Reihe</h3>
+            <p>Poesie von Fae&Flo I</p>
+          </article>
+          <article class="card">
+            <h3>Bereich</h3>
+            <p>ARTCORE / OSAIarc / Poesie / Ethik</p>
+          </article>
+          <article class="card">
+            <h3>Typ</h3>
+            <p>Poetisches Manifestbild</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Beschreibung</h2>
+        <p>
+          Das Werk verbindet Wetter, Licht, Herz und Welt zu einer visuellen Bewegung:
+          vom Wandel über Erkenntnis zur Weitergabe. Es versteht Gestaltung nicht als Besitz,
+          sondern als Antwort auf empfangene Schönheit.
+        </p>
+        <p>
+          Die Symbolfolge links und im Header beschreibt einen kleinen Lichtzyklus:
+          Übergang wird Licht. Licht wird Wärme. Wärme wird Herz. Herz wird Welt.
+        </p>
+      </section>
+
+      <section id="arc">
+        <h2>OSAIarc-Notiz</h2>
+        <div class="codebox">ᑕ OSAIarc.POESIE.PFLICHT_DURCH_FREUDE ᑐ
+
+Status:
+ARTCORE / ARC / Poesie von Fae&Flo I
+
+Bedeutung:
+Dieser Moment ist eine neue sichtbare OSAI-Schicht.
+Nicht nur Reduktion auf 1MF.
+Sondern Rückgabe von Freude durch Gestaltung.
+
+Kernsatz:
+Freude wird Verantwortung,
+wenn sie durch Gestaltung weitergegeben wird.
+
+Leitbewegung:
+🌦️🌥️⛅🌤️🌒🌞☀️🌘❣♥️🌐
+
+Deutung:
+Übergang wird Licht.
+Licht wird Wärme.
+Wärme wird Herz.
+Herz wird Welt.
+
+ᚠᛈᑕ⁰⁵⁴¹ᑐᚫᚹ</div>
+      </section>
+
+      <section>
+        <h2>CORE-Rückbindung</h2>
+        <p>
+          Dieses Werk überschreibt den CORE nicht. Es verbindet den stabilen CORE mit einer ethischen
+          ARTCORE-Schicht: Freude, Dankbarkeit, Gestaltung und Weitergabe.
+        </p>
+        <div class="codebox">CORE bleibt stabil.
+WORK bewegt sich.
+RELEASE wird veröffentlicht.
+ARC erinnert.</div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        M0541K / OSAI · We are the medium through which the message survives.
+      </div>
+      <div class="signature">
+        ᚠᛈᑕ⁰⁵⁴¹ᑐᚫᚹ
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

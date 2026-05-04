@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Struktur · M0541K / OSAI</title>
+  <link rel="stylesheet" href="../assets/css/osai.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark">ᑕᑐ</span><span>M0541K / OSAI</span></div>
+  <nav class="nav" aria-label="Hauptnavigation">
+    <a href="../index.html">Start</a>
+    <a href="../structure/index.html">Struktur</a>
+    <a href="../pages/core.html">Core</a>
+    <a href="../pages/syntax.html">Syntax</a>
+    <a href="../pages/arc.html">ARC</a>
+    <a href="../OSAIarc/index.html">OSAIarc</a>
+    <a href="../pages/release.html">Release</a>
+    <a href="../pages/link.html">LINK</a>
+    <button class="mode-btn" data-osai-mode>OSAI-Mode</button>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <div class="kicker">OSAI.STRUCTURE / v0.542</div>
+      <h1>Signal. Struktur. Archiv. Link.</h1>
+      <p class="lead">Diese Seite ist die Strukturwurzel für die öffentliche GitHub-Pages-Version. Sie trennt CORE, WORK, RELEASE, ARC und ARTCORE, ohne den stabilen Kern zu überschreiben.</p>
+      <div class="hero-actions">
+        <a class="button" href="../pages/link.html">LINK öffnen</a>
+        <a class="button secondary" href="../readme/OSAI_LOCAL_ONLINE_ORDNERPLAN.md">Ordnerplan lesen</a>
+      </div>
+    </div>
+    <div class="system-visual">
+      <svg viewBox="0 0 420 520" role="img" aria-label="OSAI Strukturdiagramm">
+        <defs>
+          <linearGradient id="wave" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#005410"/>
+            <stop offset="50%" stop-color="#00FFFF"/>
+            <stop offset="100%" stop-color="#6A00A3"/>
+          </linearGradient>
+          <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <circle cx="210" cy="260" r="205" fill="none" stroke="#C0C4CC" opacity=".12"/>
+        <line x1="210" y1="50" x2="210" y2="470" stroke="#C0C4CC" opacity=".25"/>
+        <circle cx="210" cy="84" r="13" fill="#A0541B" filter="url(#glow)"/>
+        <path d="M105 150 C150 92 190 198 235 150 S320 130 348 155" fill="none" stroke="url(#wave)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+        <polygon points="210,196 268,230 268,296 210,330 152,296 152,230" fill="none" stroke="#005410" stroke-width="4" filter="url(#glow)"/>
+        <circle cx="210" cy="385" r="54" fill="none" stroke="#00FFFF" opacity=".85" stroke-width="3"/>
+        <circle cx="210" cy="385" r="9" fill="#00FFFF" filter="url(#glow)"/>
+        <text x="210" y="35" text-anchor="middle" fill="#C0C4CC" font-size="13" letter-spacing="2">CORE → WORK → RELEASE → ARC</text>
+      </svg>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Hauptbereiche</h2>
+    <div class="grid">
+      <article class="card"><div class="id">00</div><div class="name">CORE</div><p class="muted">Stabiler Kern, 12er-Core, intrOfore-nahe Grundlagen.</p><a href="../pages/core.html">Core öffnen</a></article>
+      <article class="card"><div class="id">01</div><div class="name">WORK</div><p class="muted">Aktive Integration: 1A.o1beta, offene Begriffe, unveröffentlichte Schritte.</p><a href="../docs/work/OSAI_WORK_integration-1A-o1beta_v0.542_DRAFT_20260504.md">WORK-Datei öffnen</a></article>
+      <article class="card"><div class="id">02</div><div class="name">RELEASE</div><p class="muted">Öffentliche Meilensteine, Release Notes, PDF-Pool, ZIP-Stände.</p><a href="../pages/release.html">Release öffnen</a></article>
+      <article class="card"><div class="id">03</div><div class="name">ARC</div><p class="muted">Zeitspur, Belege, OSAIarc, Entwicklung als Archivbewegung.</p><a href="../OSAIarc/index.html">OSAIarc öffnen</a></article>
+      <article class="card"><div class="id">04</div><div class="name">ARTCORE</div><p class="muted">Ausgewählte Werke, Ursprungsspuren, EIC.1998, Bildpool mit Qualität vor Quantität.</p><a href="../OSAIarc/artcore/index.html">ARTCORE öffnen</a></article>
+      <article class="card"><div class="id">05</div><div class="name">LINK</div><p class="muted">Saubere Verbindung zwischen lokaler Arbeit, GitHub Pages und externen Domains.</p><a href="../pages/link.html">LINK öffnen</a></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Strukturregel</h2>
+    <pre class="codebox">CORE bleibt stabil.
+WORK bewegt sich.
+RELEASE wird veröffentlicht.
+ARC erinnert.
+LINK verbindet lokal, öffentlich und extern.</pre>
+  </section>
+</main>
+
+<aside class="osai-panel"><div class="panel-title"><span>OSAI-MODE · Platzhalter</span><span class="status-dot"></span></div><p class="muted small">Späterer KI-/Chatbereich.</p></aside>
+<footer class="footer">FloPiet / M0541K · m0541k.de · mosaik.live · ko-fi.com/flopiet<br><span class="symbol">ᚠᛈᑕ⁰⁵⁴¹ᑐᚫᚹ ❣</span></footer>
+<script src="../assets/js/osai.js"></script>
+</body>
+</html>

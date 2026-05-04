@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /community/
+Disallow: /gate/
+
+# Hinweis:
+# robots.txt ist keine Sicherheitssperre.
+# Es ist nur eine höfliche noindex/no-crawl-Regel.
