@@ -1,0 +1,13 @@
+{
+  "name": "OSAI_v1alpha_M0541K_GitHub_Pages_CLEAN_LINKFIX_20260504",
+  "changes": [
+    "root index.html rebuilt as OSAI.STRUCTURE page",
+    "pages/link.html added as clean LINK bridge",
+    "accidental nested duplicate folder removed",
+    "local/online folder plan added",
+    "M0541K_de bridge folder added",
+    ".gitignore added for local/private protection",
+    "old overwritten minimal index saved as pages/project-root.html"
+  ],
+  "file_count": 232
+}

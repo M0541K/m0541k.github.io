@@ -1,0 +1,30 @@
+{
+  "principle": "Qualität vor Quantität",
+  "layers": [
+    "MATERIAL",
+    "ZEICHEN",
+    "WURZEL",
+    "FELD",
+    "PERSON",
+    "GLITCH"
+  ],
+  "selected_core": [
+    "ARTCORE.001 Kupferplatte / Signalstruktur",
+    "ARTCORE.003 Florian Pietsch / Ambigramm auf Kupferplatte",
+    "ARTCORE.004 Der entwurzelte Baum",
+    "ARTCORE.005 Idee, deren Zeit gekommen ist"
+  ],
+  "selected_resonance": [
+    "ARTCORE.FIELD.005 Pusteblume im Elternurlaub",
+    "ARTCORE.FIELD.006 Familiengarten",
+    "ARTCORE.FIELD.008 Kupferbaum",
+    "ARTCORE.PERSON.009 Schwelle",
+    "ARTCORE.GLITCH.001 me glitch"
+  ],
+  "private_pool": [
+    "Körpermarkierungen",
+    "Flow-Shirt / Meerkatsu-Kontext",
+    "Glas/Farbverlauf-Bild",
+    "temporäre M0541K-Zeichen auf Haut"
+  ]
+}
