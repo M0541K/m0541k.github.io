@@ -142,3 +142,34 @@ body.osai-mode .osai-panel{display:block}
   .nav a{display:none}
   h1{letter-spacing:-.05em}
 }
+/* FAE:LOG PDF-Link · Landingpage */
+.m0541k-pdf-link{
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  padding:.85rem 1rem;
+  border-radius:999px;
+  border:1px solid rgba(206,177,77,.62);
+  background:rgba(0,5,65,.45);
+  color:var(--gold);
+  font-weight:800;
+  font-size:.9rem;
+  letter-spacing:.04em;
+  text-decoration:none;
+  box-shadow:0 0 28px rgba(206,177,77,.12);
+  transition:transform .2s ease,border-color .2s ease,background .2s ease,box-shadow .2s ease,color .2s ease;
+}
+.m0541k-pdf-link:hover{
+  transform:translateY(-1px);
+  border-color:var(--gold);
+  background:rgba(206,177,77,.1);
+  color:var(--white);
+  box-shadow:0 12px 34px rgba(0,0,0,.25),0 0 34px rgba(206,177,77,.18);
+}
+.pdf-icon{
+  font-size:1rem;
+  line-height:1;
+}
+.pdf-label{
+  white-space:nowrap;
+}
