@@ -3,13 +3,57 @@
   "package": "HERO.SET",
   "version": "v0.541",
   "status": "B.EINBAU_BEREIT",
+  "source": "Google Drive",
+  "target_folder": "assets/img/hero/",
   "files": [
-    {"file": "m1k_hero_master.jpg", "role": "SOURCE_ARC_MASTER", "drive_id": "1ufMuNvGCgBvXLgtClqxtHQHU-9OIDbWS"},
-    {"file": "m1k_hero_wide.jpg", "role": "DESKTOP_MAIN_HERO", "drive_id": "18gJZR-YJqKs6dAqM5qPRlKgGenFdLVVw"},
-    {"file": "m1k_hero_web.jpg", "role": "WEB_FALLBACK", "drive_id": "1AjPRWkq6u14xjPdLPx-iMCKc9AhNCNnW"},
-    {"file": "m1k_hero_mobile.jpg", "role": "MOBILE_HERO", "drive_id": "1uRY5z5d2mzK_Rkb2l21mercB89xZFXEl"},
-    {"file": "m1k_hero_social.jpg", "role": "OPEN_GRAPH_SOCIAL_PREVIEW", "drive_id": "1ddgp8nB-C_fB7-gU_4i-xRNNHURaynWD"},
-    {"file": "m1k_icon.png", "role": "ICON_FAVICON_SEAL", "drive_id": "1s5HA-XjnKB5u9X9ucqqYXuLW58o_EXKK"}
+    {
+      "file": "m1k_hero_master.jpg",
+      "role": "SOURCE_ARC_MASTER",
+      "drive_id": "1ufMuNvGCgBvXLgtClqxtHQHU-9OIDbWS",
+      "drive_url": "https://drive.google.com/file/d/1ufMuNvGCgBvXLgtClqxtHQHU-9OIDbWS/view?usp=drive_link",
+      "target_path": "assets/img/hero/m1k_hero_master.jpg",
+      "live_use": false
+    },
+    {
+      "file": "m1k_hero_wide.jpg",
+      "role": "DESKTOP_MAIN_HERO",
+      "drive_id": "18gJZR-YJqKs6dAqM5qPRlKgGenFdLVVw",
+      "drive_url": "https://drive.google.com/file/d/18gJZR-YJqKs6dAqM5qPRlKgGenFdLVVw/view?usp=drive_link",
+      "target_path": "assets/img/hero/m1k_hero_wide.jpg",
+      "live_use": true
+    },
+    {
+      "file": "m1k_hero_web.jpg",
+      "role": "WEB_FALLBACK",
+      "drive_id": "1AjPRWkq6u14xjPdLPx-iMCKc9AhNCNnW",
+      "drive_url": "https://drive.google.com/file/d/1AjPRWkq6u14xjPdLPx-iMCKc9AhNCNnW/view?usp=drive_link",
+      "target_path": "assets/img/hero/m1k_hero_web.jpg",
+      "live_use": true
+    },
+    {
+      "file": "m1k_hero_mobile.jpg",
+      "role": "MOBILE_HERO",
+      "drive_id": "1uRY5z5d2mzK_Rkb2l21mercB89xZFXEl",
+      "drive_url": "https://drive.google.com/file/d/1uRY5z5d2mzK_Rkb2l21mercB89xZFXEl/view?usp=drive_link",
+      "target_path": "assets/img/hero/m1k_hero_mobile.jpg",
+      "live_use": true
+    },
+    {
+      "file": "m1k_hero_social.jpg",
+      "role": "OPEN_GRAPH_SOCIAL_PREVIEW",
+      "drive_id": "1ddgp8nB-C_fB7-gU_4i-xRNNHURaynWD",
+      "drive_url": "https://drive.google.com/file/d/1ddgp8nB-C_fB7-gU_4i-xRNNHURaynWD/view?usp=drive_link",
+      "target_path": "assets/img/hero/m1k_hero_social.jpg",
+      "live_use": true
+    },
+    {
+      "file": "m1k_icon.png",
+      "role": "ICON_FAVICON_SEAL",
+      "drive_id": "1s5HA-XjnKB5u9X9ucqqYXuLW58o_EXKK",
+      "drive_url": "https://drive.google.com/file/d/1s5HA-XjnKB5u9X9ucqqYXuLW58o_EXKK/view?usp=drive_link",
+      "target_path": "assets/img/hero/m1k_icon.png",
+      "live_use": true
+    }
   ],
   "rule": "PILOT gibt frei. Kein automatisches Live."
 }
