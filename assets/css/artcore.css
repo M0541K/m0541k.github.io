@@ -1,2 +1,22 @@
 :root{--bg:#000541;--text:#fff;--muted:#C0C4CC;--green:#005410;--copper:#A0541B;--gold:#CEB14D}
 *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% 14%,rgba(160,84,27,.22),transparent 30%),radial-gradient(circle at 85% 80%,rgba(0,84,16,.18),transparent 30%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}.arc-page{width:min(1100px,92vw);margin:0 auto;padding:7vh 0 10vh}.kicker{color:var(--gold);letter-spacing:.16em;text-transform:uppercase;font-size:.78rem}h1{font-size:clamp(2.3rem,8vw,6rem);line-height:.92;margin:.18em 0}.lead{color:var(--muted);max-width:760px;font-size:1.08rem;line-height:1.65}.section-title{margin-top:4rem;color:var(--gold);font-size:.9rem;letter-spacing:.14em;text-transform:uppercase}.layer-grid,.work-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:1rem;margin-top:1.4rem}.layer-card,.work-card{min-height:220px;border:1px solid rgba(255,255,255,.18);border-radius:26px;padding:1.15rem;background:rgba(255,255,255,.045);text-decoration:none;display:flex;flex-direction:column;justify-content:flex-end}.layer-card:hover,.work-card:hover{border-color:var(--copper);background:rgba(255,255,255,.07)}.layer-card small,.work-card small,.meta{color:var(--gold)}.layer-card h2,.work-card h2{margin:.4rem 0;font-size:1.35rem}.layer-card p,.work-card p{color:var(--muted);line-height:1.5;margin-bottom:0}.work-text{max-width:820px;color:var(--muted);font-size:1.08rem;line-height:1.78}.quote{border-left:2px solid var(--copper);padding-left:1rem;color:var(--text);margin:2rem 0;font-size:1.22rem;line-height:1.55}.image-note{margin-top:2rem;padding:1rem;border:1px dashed rgba(255,255,255,.22);border-radius:18px;color:var(--muted);background:rgba(255,255,255,.035)}.backlink{display:inline-block;margin-top:3rem;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:.8rem 1rem;color:var(--text);text-decoration:none}.backlink:hover{border-color:var(--gold)}
+
+.work-image{
+  margin:2rem 0;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:24px;
+  overflow:hidden;
+  background:rgba(255,255,255,.035);
+}
+
+.work-image img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+.work-image figcaption{
+  padding:.85rem 1rem;
+  color:var(--muted);
+  font-size:.92rem;
+}
