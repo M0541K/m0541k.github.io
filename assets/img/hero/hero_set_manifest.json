@@ -1,0 +1,15 @@
+{
+  "project": "M0541K / OSAI",
+  "package": "HERO.SET",
+  "version": "v0.541",
+  "status": "B.EINBAU_BEREIT",
+  "files": [
+    {"file": "m1k_hero_master.jpg", "role": "SOURCE_ARC_MASTER", "drive_id": "1ufMuNvGCgBvXLgtClqxtHQHU-9OIDbWS"},
+    {"file": "m1k_hero_wide.jpg", "role": "DESKTOP_MAIN_HERO", "drive_id": "18gJZR-YJqKs6dAqM5qPRlKgGenFdLVVw"},
+    {"file": "m1k_hero_web.jpg", "role": "WEB_FALLBACK", "drive_id": "1AjPRWkq6u14xjPdLPx-iMCKc9AhNCNnW"},
+    {"file": "m1k_hero_mobile.jpg", "role": "MOBILE_HERO", "drive_id": "1uRY5z5d2mzK_Rkb2l21mercB89xZFXEl"},
+    {"file": "m1k_hero_social.jpg", "role": "OPEN_GRAPH_SOCIAL_PREVIEW", "drive_id": "1ddgp8nB-C_fB7-gU_4i-xRNNHURaynWD"},
+    {"file": "m1k_icon.png", "role": "ICON_FAVICON_SEAL", "drive_id": "1s5HA-XjnKB5u9X9ucqqYXuLW58o_EXKK"}
+  ],
+  "rule": "PILOT gibt frei. Kein automatisches Live."
+}
