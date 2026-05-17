@@ -239,4 +239,56 @@ body.osai-mode .osai-panel{display:block}
     background-size:cover;
     background-position:center top;
   }
+
+/* OSAI-MODE · Orientierungspanel v0.541 */
+.osai-panel-flow{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.35rem;
+  margin:.85rem 0;
+  font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+  color:var(--gold);
+  font-size:.82rem;
+}
+
+.osai-panel-flow span{
+  border:1px solid rgba(206,177,77,.24);
+  border-radius:999px;
+  padding:.25rem .42rem;
+  background:rgba(206,177,77,.055);
+}
+
+.osai-panel-actions{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.5rem;
+  margin:.9rem 0;
+}
+
+.osai-panel-actions a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:2.25rem;
+  padding:.45rem .55rem;
+  border:1px solid var(--line);
+  border-radius:.9rem;
+  background:rgba(255,255,255,.035);
+  color:var(--silber);
+  font-weight:750;
+  font-size:.86rem;
+  text-align:center;
+}
+
+.osai-panel-actions a:hover{
+  border-color:var(--gold);
+  color:var(--white);
+  background:rgba(206,177,77,.09);
+}
+
+@media (max-width:420px){
+  .osai-panel-actions{
+    grid-template-columns:1fr;
+  }
 }
