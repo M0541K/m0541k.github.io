@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VOID→LINK OG · M0541K / OSAI</title>
+  <meta name="description" content="VOID→LINK OG ist das ruhige Ur-Interface von M0541K / OSAI: langsam bewegte Zeichen, Nachtblau, Gold und Ursprungsspur.">
+  <meta property="og:title" content="VOID→LINK OG · M0541K / OSAI">
+  <meta property="og:description" content="Ur-Interface mit langsam bewegten Symbolen: VOID → SIGNAL → STRUKTUR → ARCHIV → LINK.">
+  <meta property="og:image" content="https://m0541k.de/assets/img/hero/m1k_hero_social.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="../../assets/css/osai.css">
+
+  <style>
+    :root{
+      --og-bg:#000541;
+      --og-gold:#CEB14D;
+      --og-copper:#A0541B;
+      --og-silver:#C0C4CC;
+      --og-green:#005410;
+      --og-cyan:#00FFFF;
+    }
+
+    body{
+      overflow-x:hidden;
+      background:
+        radial-gradient(circle at 50% 20%, rgba(206,177,77,.12), transparent 22rem),
+        radial-gradient(circle at 18% 80%, rgba(0,84,16,.18), transparent 28rem),
+        radial-gradient(circle at 88% 75%, rgba(160,84,27,.16), transparent 28rem),
+        var(--og-bg);
+    }
+
+    .og-stage{
+      position:relative;
+      min-height:calc(100vh - 72px);
+      display:grid;
+      place-items:center;
+      overflow:hidden;
+      isolation:isolate;
+      padding:clamp(3rem,8vw,7rem) 1rem;
+    }
+
+    .og-stage::before{
+      content:"";
+      position:absolute;
+      inset:-20%;
+      z-index:-3;
+      background:
+        linear-gradient(rgba(192,196,204,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(192,196,204,.035) 1px, transparent 1px);
+      background-size:54px 54px;
+      transform:rotate(-7deg) scale(1.15);
+      animation:gridDrift 80s linear infinite;
+      opacity:.48;
+    }
+
+    .og-stage::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:-2;
+      background:
+        radial-gradient(circle at center, transparent 0 18rem, rgba(0,5,65,.32) 33rem, rgba(0,5,65,.86) 100%);
+      pointer-events:none;
+    }
+
+    .og-core{
+      position:relative;
+      width:min(760px,92vw);
+      aspect-ratio:1/1;
+      display:grid;
+      place-items:center;
+    }
+
+    .og-ring{
+      position:absolute;
+      inset:7%;
+      border:1px solid rgba(206,177,77,.34);
+      border-radius:999px;
+      box-shadow:0 0 80px rgba(206,177,77,.08), inset 0 0 80px rgba(0,255,255,.04);
+      animation:ringBreath 12s ease-in-out infinite;
+    }
+
+    .og-ring.r2{
+      inset:19%;
+      border-color:rgba(192,196,204,.2);
+      animation-duration:18s;
+      animation-direction:reverse;
+    }
+
+    .og-ring.r3{
+      inset:31%;
+      border-color:rgba(160,84,27,.3);
+      animation-duration:24s;
+    }
+
+    .og-line{
+      position:absolute;
+      left:8%;
+      right:8%;
+      top:50%;
+      height:1px;
+      background:linear-gradient(90deg, transparent, rgba(206,177,77,.6), rgba(0,255,255,.32), rgba(206,177,77,.6), transparent);
+      transform-origin:center;
+      opacity:.72;
+    }
+
+    .og-line.l2{transform:rotate(60deg)}
+    .og-line.l3{transform:rotate(120deg)}
+
+    .og-center{
+      position:relative;
+      width:min(320px,72vw);
+      aspect-ratio:1/1;
+      border:1px solid rgba(206,177,77,.5);
+      border-radius:999px;
+      display:grid;
+      place-items:center;
+      background:rgba(0,5,65,.42);
+      backdrop-filter:blur(10px);
+      box-shadow:0 0 70px rgba(206,177,77,.14);
+      animation:centerFloat 9s ease-in-out infinite;
+      text-align:center;
+      padding:2rem;
+    }
+
+    .og-title{
+      margin:0;
+      font-size:clamp(2.2rem,7vw,5.2rem);
+      line-height:.92;
+      color:var(--white);
+      letter-spacing:-.08em;
+    }
+
+    .og-sub{
+      margin:.8rem 0 0;
+      color:var(--muted);
+      font-size:clamp(.95rem,2vw,1.08rem);
+    }
+
+    .og-code{
+      margin-top:1.1rem;
+      color:var(--og-gold);
+      font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+      font-size:.86rem;
+      letter-spacing:.05em;
+    }
+
+    .og-symbol{
+      position:absolute;
+      width:3.3rem;
+      height:3.3rem;
+      display:grid;
+      place-items:center;
+      border:1px solid rgba(206,177,77,.32);
+      border-radius:999px;
+      color:var(--og-gold);
+      background:rgba(0,5,65,.34);
+      box-shadow:0 0 30px rgba(206,177,77,.1);
+      font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+      animation:slowOrbit 42s linear infinite;
+    }
+
+    .og-symbol.s1{top:4%;left:48%;animation-delay:0s}
+    .og-symbol.s2{top:18%;right:12%;animation-delay:-7s;color:var(--og-silver)}
+    .og-symbol.s3{right:5%;top:50%;animation-delay:-14s;color:var(--og-cyan)}
+    .og-symbol.s4{right:18%;bottom:13%;animation-delay:-21s;color:var(--og-gold)}
+    .og-symbol.s5{left:48%;bottom:4%;animation-delay:-28s;color:var(--og-copper)}
+    .og-symbol.s6{left:12%;bottom:18%;animation-delay:-35s;color:var(--og-silver)}
+    .og-symbol.s7{left:5%;top:50%;animation-delay:-42s;color:var(--og-green)}
+    .og-symbol.s8{left:18%;top:13%;animation-delay:-49s;color:var(--og-gold)}
+
+    .og-glyph{
+      position:absolute;
+      color:rgba(206,177,77,.34);
+      font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+      font-size:clamp(1rem,2.5vw,1.6rem);
+      animation:glyphDrift 34s ease-in-out infinite;
+    }
+
+    .og-glyph.g1{top:15%;left:8%;animation-delay:-4s}
+    .og-glyph.g2{top:22%;right:7%;animation-delay:-12s}
+    .og-glyph.g3{bottom:18%;right:12%;animation-delay:-20s}
+    .og-glyph.g4{bottom:14%;left:9%;animation-delay:-28s}
+    .og-glyph.g5{top:7%;left:50%;animation-delay:-9s}
+    .og-glyph.g6{bottom:7%;left:50%;animation-delay:-16s}
+
+    .og-actions{
+      position:absolute;
+      left:50%;
+      bottom:clamp(1.2rem,4vw,2.2rem);
+      transform:translateX(-50%);
+      display:flex;
+      gap:.7rem;
+      flex-wrap:wrap;
+      justify-content:center;
+      width:min(720px,92vw);
+      z-index:3;
+    }
+
+    .og-note{
+      position:absolute;
+      left:clamp(1rem,4vw,2rem);
+      bottom:clamp(1rem,4vw,2rem);
+      color:rgba(192,196,204,.62);
+      font-size:.82rem;
+      max-width:28ch;
+      z-index:2;
+    }
+
+    @keyframes gridDrift{
+      0%{transform:rotate(-7deg) translate3d(0,0,0) scale(1.15)}
+      100%{transform:rotate(-7deg) translate3d(-54px,-54px,0) scale(1.15)}
+    }
+
+    @keyframes ringBreath{
+      0%,100%{transform:scale(1);opacity:.72}
+      50%{transform:scale(1.035);opacity:1}
+    }
+
+    @keyframes centerFloat{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-10px)}
+    }
+
+    @keyframes slowOrbit{
+      0%{transform:rotate(0deg) translateX(8px) rotate(0deg)}
+      100%{transform:rotate(360deg) translateX(8px) rotate(-360deg)}
+    }
+
+    @keyframes glyphDrift{
+      0%,100%{transform:translate3d(0,0,0);opacity:.25}
+      50%{transform:translate3d(0,-18px,0);opacity:.52}
+    }
+
+    @media (max-width:700px){
+      .og-symbol{
+        width:2.7rem;
+        height:2.7rem;
+        font-size:.82rem;
+      }
+
+      .og-note{
+        display:none;
+      }
+
+      .og-actions{
+        position:relative;
+        left:auto;
+        bottom:auto;
+        transform:none;
+        margin-top:1.5rem;
+      }
+
+      .og-stage{
+        display:block;
+      }
+
+      .og-core{
+        margin:1.5rem auto;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      .og-stage::before,
+      .og-ring,
+      .og-center,
+      .og-symbol,
+      .og-glyph{
+        animation:none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark">ᑕᑐ</span><span>M0541K / OSAI</span></div>
+  <nav class="nav" aria-label="Hauptnavigation">
+    <a href="../../index.html">Start</a>
+    <a href="../../structure/index.html">Struktur</a>
+    <a href="../../pages/core.html">Core</a>
+    <a href="../../pages/syntax.html">Syntax</a>
+    <a href="../../pages/arc.html">ARC</a>
+    <a href="../index.html">OSAIarc</a>
+    <a href="../../pages/release.html">Release</a>
+    <a href="../../pages/link.html">LINK</a>
+    <button class="mode-btn" data-osai-mode>OSAI-Mode</button>
+  </nav>
+</header>
+
+<main class="og-stage" aria-label="VOID zu LINK Ur-Interface">
+  <div class="og-core">
+    <div class="og-ring"></div>
+    <div class="og-ring r2"></div>
+    <div class="og-ring r3"></div>
+    <div class="og-line l1"></div>
+    <div class="og-line l2"></div>
+    <div class="og-line l3"></div>
+
+    <div class="og-symbol s1">VOID</div>
+    <div class="og-symbol s2">SIG</div>
+    <div class="og-symbol s3">MOV</div>
+    <div class="og-symbol s4">FORM</div>
+    <div class="og-symbol s5">ARC</div>
+    <div class="og-symbol s6">LINK</div>
+    <div class="og-symbol s7">ᑕᑐ</div>
+    <div class="og-symbol s8">541</div>
+
+    <div class="og-glyph g1">ᑕVOIDᑐ</div>
+    <div class="og-glyph g2">ᑕSIGNALᑐ</div>
+    <div class="og-glyph g3">ᑕARCHIVᑐ</div>
+    <div class="og-glyph g4">ᑕLINKᑐ</div>
+    <div class="og-glyph g5">ᚠᛈ</div>
+    <div class="og-glyph g6">ᚫᚹ</div>
+
+    <section class="og-center">
+      <div>
+        <h1 class="og-title">VOID<br>→LINK</h1>
+        <p class="og-sub">Ur-Interface · langsam bewegte Zeichen</p>
+        <div class="og-code">ᑕVOIDᑐ → ᑕSIGNALᑐ → ᑕSTRUKTURᑐ → ᑕARCHIVᑐ → ᑕLINKᑐ</div>
+      </div>
+    </section>
+  </div>
+
+  <div class="og-actions">
+    <a class="button" href="../../pages/void2link.html">Lesefassung öffnen</a>
+    <a class="button secondary" href="../index.html">Zu OSAIarc</a>
+    <a class="button secondary" href="../../pages/link.html">Zur LINK-Seite</a>
+  </div>
+
+  <p class="og-note">OG-Spur: Atmosphäre zuerst. Langsame Bewegung. Kein Live-Zwang. Pilot gibt frei.</p>
+</main>
+
+<aside class="osai-panel" aria-label="OSAI-Mode Orientierung">
+  <div class="panel-title">
+    <span>OSAI-MODE · Orientierung</span>
+    <span class="status-dot"></span>
+  </div>
+
+  <p class="muted small">Signal lesen. Struktur finden. Spur öffnen.</p>
+
+  <div class="osai-panel-flow">
+    <span>ᑕSIGNALᑐ</span>
+    <span>→</span>
+    <span>ᑕSTRUKTURᑐ</span>
+    <span>→</span>
+    <span>ᑕSPURᑐ</span>
+  </div>
+
+  <div class="osai-panel-actions">
+    <a href="../../assets/pdf/M0541K_OSAI_INTROFORE_v0-541.pdf" target="_blank" rel="noopener">Introfore</a>
+    <a href="../../pages/faelog.html">FaeLog</a>
+    <a href="../../pages/link.html">LINK</a>
+    <a href="../index.html">ARC</a>
+  </div>
+
+  <p class="muted small">Pilot gibt frei. Nicht alles wird sofort live.</p>
+</aside>
+
+<script src="../../assets/js/osai.js"></script>
+</body>
+</html>
