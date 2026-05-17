@@ -1,0 +1,7 @@
+In index.html ändern:
+
+ALT:
+<section class="hero">
+
+NEU:
+<section class="hero hero--m1k-home">
