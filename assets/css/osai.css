@@ -173,3 +173,70 @@ body.osai-mode .osai-panel{display:block}
 .pdf-label{
   white-space:nowrap;
 }
+/* M0541K / OSAI · Home Hero v0.541 */
+.hero--m1k-home{
+  position:relative;
+  overflow:hidden;
+  min-height:72vh;
+  isolation:isolate;
+}
+
+.hero--m1k-home::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-2;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,5,65,.98) 0%,
+      rgba(0,5,65,.88) 32%,
+      rgba(0,5,65,.58) 62%,
+      rgba(0,5,65,.82) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0,5,65,.25) 0%,
+      rgba(0,5,65,.72) 100%
+    ),
+    url("../img/hero/m1k_hero_wide.jpg");
+  background-size:cover;
+  background-position:center;
+}
+
+.hero--m1k-home::after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0 0;
+  height:34%;
+  z-index:-1;
+  background:linear-gradient(
+    180deg,
+    rgba(0,5,65,0) 0%,
+    #000541 92%
+  );
+}
+
+.hero--m1k-home > *{
+  position:relative;
+  z-index:1;
+}
+
+@media (max-width:850px){
+  .hero--m1k-home{
+    min-height:78vh;
+  }
+
+  .hero--m1k-home::before{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(0,5,65,.94) 0%,
+        rgba(0,5,65,.78) 45%,
+        rgba(0,5,65,.94) 100%
+      ),
+      url("../img/hero/m1k_hero_mobile.jpg");
+    background-size:cover;
+    background-position:center top;
+  }
+}
