@@ -1,0 +1,35 @@
+{
+  "project": "M0541K / OSAI",
+  "package": "VOID2LINK_OG_WEB_PACKAGE",
+  "version": "v0.541",
+  "status": "UPLOAD_READY",
+  "files": [
+    {
+      "path": "OSAIarc/void2link-og/index.html",
+      "action": "create",
+      "role": "VOID2LINK_OG_MOTION_INTERFACE"
+    },
+    {
+      "path": "pages/void2link.html",
+      "action": "replace",
+      "role": "PUBLIC_READING_PAGE_WITH_OG_LINK"
+    },
+    {
+      "path": "OSAIarc/index.html",
+      "action": "replace",
+      "role": "ARC_INDEX_WITH_OG_CARD"
+    },
+    {
+      "path": "README.md",
+      "action": "reference",
+      "role": "UPLOAD_INSTRUCTIONS"
+    },
+    {
+      "path": "VOID2LINK_OG_MANIFEST_v0-541.json",
+      "action": "reference",
+      "role": "PACKAGE_MANIFEST"
+    }
+  ],
+  "rule": "PILOT gibt frei. Kein automatisches Live.",
+  "reading": "VOID2LINK.PUBLIC bleibt Lesefassung. VOID2LINK.OG ist rekonstruierte Ur-Interface-Spur."
+}

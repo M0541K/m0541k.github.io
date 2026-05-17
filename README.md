@@ -1,33 +1,40 @@
-# M0541K / OSAI · VOID→LINK Web-Paket v0.541
+# M0541K / OSAI · VOID→LINK OG Web-Paket v0.541
 
-Status: public-safe · Upload-Paket · kein Live-Zwang
+Status: upload-ready · rekonstruierte OG-Motion-Schicht · public-safe
 
 ## Enthaltene Dateien
 
 ```txt
-pages/void2link.html
-pages/link.html
-OSAIarc/index.html
+OSAIarc/void2link-og/index.html   → neu anlegen
+pages/void2link.html              → ersetzen
+OSAIarc/index.html                → ersetzen
 ```
 
-## Was ist neu?
+## Bedeutung
 
-- `pages/void2link.html` ist eine neue öffentliche Leseseite für die Ur-Route.
-- `pages/link.html` bekommt eine neue Karte und einen Hero-Button zu `VOID→LINK`.
-- `OSAIarc/index.html` bekommt eine zweite Karte zu `VOID→LINK` neben ARTCORE.
+- `pages/void2link.html` bleibt die öffentliche Lesefassung.
+- `OSAIarc/void2link-og/index.html` ist die OG-/Ur-Interface-Spur mit langsam bewegten Symbolen.
+- `OSAIarc/index.html` verlinkt beide: VOID→LINK und VOID→LINK OG.
 
 ## Upload-Anleitung
 
-1. `pages/void2link.html` neu hochladen.
-2. `pages/link.html` ersetzen.
-3. `OSAIarc/index.html` ersetzen.
-4. Danach prüfen: LINK → VOID→LINK, OSAIarc → VOID→LINK, VOID→LINK → LINK, VOID→LINK → OSAIarc.
+1. Ordner `OSAIarc/void2link-og/` erstellen.
+2. `index.html` dort hochladen.
+3. `pages/void2link.html` ersetzen.
+4. `OSAIarc/index.html` ersetzen.
+5. Danach prüfen:
+   - VOID→LINK → Ur-Interface ansehen
+   - OSAIarc → VOID→LINK OG
+   - VOID→LINK OG → Lesefassung
+   - VOID→LINK OG → OSAIarc
+   - OSAI-Mode Button
+   - Mobil / reduced motion
 
-## Regel
+## Schutz
 
-Lokal bleibt Arbeitsraum.  
-Online zeigt eine verständliche Route.  
-ARC bewahrt Herkunft.  
-LINK öffnet den Weg.
+Die OG-Seite enthält `prefers-reduced-motion: reduce`, damit Bewegungen bei reduzierter Bewegung deaktiviert werden.
 
-ᚠᛈᑕ⁰⁵⁴¹ᑐᚫᚹ ❣
+ᑕVOID2LINK.OGᑐ
+Ur-Seite bleibt Quelle.
+OG-Seite ist rekonstruierte Interface-Spur.
+Leseseite bleibt öffentliche Erklärung.
