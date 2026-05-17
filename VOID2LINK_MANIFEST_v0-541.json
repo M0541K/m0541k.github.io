@@ -1,0 +1,35 @@
+{
+  "project": "M0541K / OSAI",
+  "package": "VOID2LINK_WEB_PACKAGE",
+  "version": "v0.541",
+  "status": "UPLOAD_READY",
+  "files": [
+    {
+      "path": "pages/void2link.html",
+      "action": "create",
+      "role": "VOID_TO_LINK_PUBLIC_READING_PAGE"
+    },
+    {
+      "path": "pages/link.html",
+      "action": "replace",
+      "role": "LINK_PAGE_WITH_VOID2LINK_ROUTE"
+    },
+    {
+      "path": "OSAIarc/index.html",
+      "action": "replace",
+      "role": "OSAIARC_INDEX_WITH_VOID2LINK_CARD"
+    },
+    {
+      "path": "README.md",
+      "action": "reference",
+      "role": "UPLOAD_INSTRUCTIONS"
+    },
+    {
+      "path": "VOID2LINK_MANIFEST_v0-541.json",
+      "action": "reference",
+      "role": "PACKAGE_MANIFEST"
+    }
+  ],
+  "rule": "PILOT gibt frei. Kein automatisches Live.",
+  "reading": "Ur-Seite bleibt Quelle. VOID2LINK ist die öffentliche Lesefassung."
+}

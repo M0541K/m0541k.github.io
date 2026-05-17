@@ -1,19 +1,33 @@
-# OSAI_v1alpha_M0541K_GitHub_Pages
+# M0541K / OSAI · VOID→LINK Web-Paket v0.541
 
-Projektwurzel für M0541K / OSAI GitHub Pages.
+Status: public-safe · Upload-Paket · kein Live-Zwang
 
-Aktueller Fokus:
+## Enthaltene Dateien
 
-- `index.html` = Strukturwurzel
-- `pages/link.html` = LINK-Ebene zwischen lokal, online und extern
-- `OSAIarc/` = Archivbereich
-- `OSAIarc/artcore/` = kuratierte Werkspur
-- `docs/work/` = aktive Integrationsdateien, z. B. OSAI 1A.o1beta
-- `readme/OSAI_LOCAL_ONLINE_ORDNERPLAN.md` = Trennung lokal/online
+```txt
+pages/void2link.html
+pages/link.html
+OSAIarc/index.html
+```
 
-Wichtig:
-Keine echte `/root` im Repository anlegen.
-`root` bedeutet hier nur Projektwurzel.
+## Was ist neu?
 
-Grundregel:
-CORE bleibt stabil. WORK bewegt sich. RELEASE wird veröffentlicht. ARC erinnert. LINK verbindet.
+- `pages/void2link.html` ist eine neue öffentliche Leseseite für die Ur-Route.
+- `pages/link.html` bekommt eine neue Karte und einen Hero-Button zu `VOID→LINK`.
+- `OSAIarc/index.html` bekommt eine zweite Karte zu `VOID→LINK` neben ARTCORE.
+
+## Upload-Anleitung
+
+1. `pages/void2link.html` neu hochladen.
+2. `pages/link.html` ersetzen.
+3. `OSAIarc/index.html` ersetzen.
+4. Danach prüfen: LINK → VOID→LINK, OSAIarc → VOID→LINK, VOID→LINK → LINK, VOID→LINK → OSAIarc.
+
+## Regel
+
+Lokal bleibt Arbeitsraum.  
+Online zeigt eine verständliche Route.  
+ARC bewahrt Herkunft.  
+LINK öffnet den Weg.
+
+ᚠᛈᑕ⁰⁵⁴¹ᑐᚫᚹ ❣
